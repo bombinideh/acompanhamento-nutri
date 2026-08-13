@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { homeForRole, readSession, SESSION_COOKIE } from "@/lib/auth";
 
-export async function proxy(request: NextRequest) {
+export async function middleware(request: NextRequest) {
   const session = await readSession(request.cookies.get(SESSION_COOKIE)?.value);
   const path = request.nextUrl.pathname;
   const isLogin = path.startsWith("/login");

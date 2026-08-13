@@ -26,7 +26,7 @@ Cadastro de usuários **não** aparece na tela. É feito via API (Postman). A te
 
 As duas acessam `/conta` para alterar nome, e-mail e senha, e `/login` para entrar.
 
-Redirecionamento: paciente não entra em `/nutri`; nutri que acessa `/` cai em `/nutri`. Isso está em `proxy.ts`.
+Redirecionamento: paciente não entra em `/nutri`; nutri que acessa `/` cai em `/nutri`. Isso está em `middleware.ts`.
 
 ## Stack
 
@@ -55,7 +55,7 @@ Redirecionamento: paciente não entra em `/nutri`; nutri que acessa `/` cai em `
 | `components/PasswordField.tsx` | Campo de senha com mostrar/ocultar. |
 | `lib/week.ts` | Estrutura da semana, dias e refeições. |
 | `lib/auth.ts` | Cookie de sessão e papéis. |
-| `proxy.ts` | Protege rotas e redireciona por papel. |
+| `middleware.ts` | Protege rotas e redireciona por papel. |
 | `app/globals.css` | Estilo geral + login (tela sem scroll, imagem em `object-fit: contain`). |
 
 Hábitos registrados (por dia):
