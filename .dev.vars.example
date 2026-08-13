@@ -1,0 +1,3 @@
+NEXTJS_ENV=development
+DATABASE_URL="postgresql://habitos:habitos@localhost:5432/habitos?schema=public"
+AUTH_SECRET="gere-uma-string-longa-aleatoria"
